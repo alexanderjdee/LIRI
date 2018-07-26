@@ -1,0 +1,26 @@
+{
+  "name": "liri",
+  "version": "1.0.0",
+  "description": "A command line node app that takes in parameters and gives you back data",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderjdee/LIRI.git"
+  },
+  "keywords": [],
+  "author": "Alex Dee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderjdee/LIRI/issues"
+  },
+  "homepage": "https://github.com/alexanderjdee/LIRI#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.87.0",
+    "twitter": "^1.7.1"
+  }
+}
