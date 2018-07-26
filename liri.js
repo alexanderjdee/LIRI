@@ -52,6 +52,8 @@ function formatInputs(){
 
 
 function runCommand(){
+    console.log("");
+
     switch (command) {
         case "my-tweets":   
             client.get("statuses/user_timeline", params, function(error, tweets, response){
@@ -97,15 +99,17 @@ function runCommand(){
     
             request(queryUrl, function (error, response, body) {
                 if (!error && response.statusCode === 200) {
-                    console.log("Title: " + JSON.parse(body).Title);
+                    var movie = JSON.parse(body);
+
+                    console.log("Movie Title: " + movie.Title);
                     console.log("---------------");
-                    console.log("Year: " + JSON.parse(body).Year);
-                    console.log("IMDB: " + JSON.parse(body).imdbRating);
-                    console.log("Rotten Tomatoes: " + JSON.stringify(JSON.parse(body).Ratings[1].Value));
-                    console.log("Country: " + JSON.parse(body).Country);
-                    console.log("Language: " + JSON.parse(body).Language);
-                    console.log("Plot: " + JSON.parse(body).Plot);
-                    console.log("Actors: " + JSON.parse(body).Actors);
+                    console.log("Year: " + movie.Year);
+                    console.log("IMDB: " + movie.imdbRating);
+                    console.log("Rotten Tomatoes: " + movie.Ratings[1].Value);
+                    console.log("Country: " + movie.Country);
+                    console.log("Language: " + movie.Language);
+                    console.log("Plot: " + movie.Plot);
+                    console.log("Actors: " + movie.Actors);
                     console.log("---------------");
                 }
             });
