@@ -8,7 +8,7 @@ The commands are the following:
 
 - my-tweets: This returns the last 20 tweets on my personal twitter account. Example: node liri.js my-tweets
 
-- spotify-this-song <song artist(optional))>: This returns information on this song from the Spotify API. Sometimes only including the song name doesn't return the correct song, so including the artist name next to it is more likely to get an accurate response. Example: node liri.js spotify-this-song The Sign Ace of Base
+- spotify-this-song <song artist(optional)>: This returns information on this song from the Spotify API. Sometimes only including the song name doesn't return the correct song, so including the artist name next to it is more likely to get an accurate response. Example: node liri.js spotify-this-song The Sign Ace of Base
 
 - movie-this: This returns information on this movie from the OMDB API. Example: node liri.js movie-this Mr. Nobody
 
